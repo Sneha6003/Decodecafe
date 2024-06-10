@@ -9,12 +9,12 @@ const Expertise = () => {
       <section className='expertise'>
         <div className='container'>
           <div className='heading-title'>
-            <Title title='Our expertise' />
-            <p>Vivamus a ligula ut velit placerat egestas at id leo. Nulla ac volutpat nunc. Suspendisse ut magna porttitor, sollicitudin ligula at, molestie dolor.</p>
+            <Title title='Our Journey' />
+            <p>Many college clubs charge students for event/webinar attendance and completion certificates, leading to attendance for certificates rather than learning. Believing in free access to education, we started a community to provide guidance on topics like open source, off-campus internships, life after college, DevOps, investing in the stock market, etc. aiming to empower students with knowledge and opportunities without financial barriers.</p>
           </div>
           <div className='hero-content grid-4'>
             {expertise.map((item) => (
-              <Card data={item} key={item.id} caption='learn more' />
+              <Card data={item} key={item.id}  />
             ))}
           </div>
         </div>

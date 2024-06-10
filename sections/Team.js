@@ -10,7 +10,7 @@ const Team = () => {
       <section className='agency bg-top'>
         <div className='container'>
           <div className='heading-title'>
-            <TitleSm title='MEET OUR TEAM' /> <br />
+            <TitleSm title='MEET OUR CORE TEAM MEMBERS' /> <br />
             <br />
             <Title title='A team of smart & passionate creatives' className='title-bg' />
           </div>

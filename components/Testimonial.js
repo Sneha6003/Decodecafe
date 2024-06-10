@@ -56,7 +56,7 @@ const Testimonial = () => {
       <section className='testimonial'>
         <div className='container'>
           <div className='heading-title'>
-            <TitleSm title='WHAT CLIENTS SAY ABOUT OUR WORK' />
+            <TitleSm title='TESTIMONIALS' />
           </div>
           <div className='cards'>
             <Slider {...settings}>

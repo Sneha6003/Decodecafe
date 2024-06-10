@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='container'>
           <div className='grid-4'>
             <div className='logo'>
-              <TitleLogo title='creative' caption='7' className='logobg' />
+              <TitleLogo title='CodeCafe' caption='De' className='logobg' />
               <br />
               <span>
                 Questions? Reach us <br /> Monday – Friday from 9 am to 6 pm
@@ -23,21 +23,15 @@ const Footer = () => {
             </div>
             <ul>
               <h3>COMPANY</h3>
-              <li>
-                <Link href='/'>About agency</Link>
-              </li>
+              
               <li>
                 <Link href='/'>Our team</Link>
               </li>
-              <li>
-                <Link href='/'>Showcase</Link>
-              </li>
+              
               <li>
                 <Link href='/'>Blog</Link>
               </li>
-              <li>
-                <Link href='/'>Demo design system</Link>
-              </li>
+              
               <li>
                 <Link href='/'>Contact</Link>
               </li>
