@@ -18,14 +18,14 @@ const Events = () => {
           </div>
 
          <div className="w-full m-4 p-4 flex justify-between">
-          <select onChange={(e) => setFilter(e.target.value.split(','))} className="button-primary" style={{margin:"10px"}}>
+          <select onChange={(e) => setFilter(e.target.value.split(','))} className="button-primary" style={{margin:"10px", color:'white'}}>
             <option value="" disabled selected>Mode</option>
             <option value="offline,online">All</option>
             <option value="offline">Offline</option>
             <option value="online">Online</option>
           </select>
 
-          <select onChange={(e) => setFilterLocation(e.target.value.split(','))} className="button-primary" style={{margin:"10px"}}>
+          <select onChange={(e) => setFilterLocation(e.target.value.split(','))} className="button-primary" style={{margin:"10px", paddingRight: "0px", color:'white'}}>
             <option value="" disabled selected>Location</option>
             <option value="ahmedabad,rajkot,gandhinagar">All</option>
             <option value="rajkot">Rajkot</option>

@@ -27,7 +27,7 @@ export const Card = ({ data, caption, show, path }) => {
           <ul className="flex space-x-3">
             {data.category.map((text, i) => (
               <li key={i} className="p-3 rounded bg-white text-black inline-flex items-center">
-                {text.text + (i !== data.category.length - 1 ? ' • ' : '')}
+                {`${text.text}${i !== data.category.length - 1 ? ' • ' : ''}`}
               </li>
             ))}
           </ul>

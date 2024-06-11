@@ -46,7 +46,7 @@ export const expertise = [
   },
   {
     id: 3,
-    title: "Fetch.ai Hackaton",
+    title: "Fetch.ai Hackathon",
     slug: "fetch-ai-hackathon",
     cover: "../images/e4.jpg",
     desc:'300+ participants. cash prizes worth 25k+. microagent and uagents application',
