@@ -7,10 +7,8 @@ import React from "react"
 
 const SinglePost = () => {
   const router = useRouter()
-  const { id } = router.query
-  console.log(id)
-  const post = expertise.find((post) => post.id === parseInt(id))
-  console.log(post)
+  const { slug } = router.query
+  const post = expertise.find((post) => post.slug === parseInt(slug))
 
   return (    
     <>

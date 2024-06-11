@@ -25,6 +25,7 @@ export const expertise = [
   {
     id: 1,
     title: "Hack for India",
+    slug: "hack-for-india",
     cover: "../images/e1.jpg",
     desc:'Showcased in newspapers. 10K Developers responses. 1500+ teams registered. 48 hour mega hackathon. mentors from reowned tech giants. communities collaborated.',
     date:'20 January 2024',
@@ -35,6 +36,7 @@ export const expertise = [
   {
     id: 2,
     title: "Decode Devs Meetup",
+    slug: "decode-devs-meetup",
     cover: "../images/e3.jpg",
     desc:'flagship developer meetup. speakers from amazon. tech and networking sessions. 500+ responses across the nation. fetch.ai and github sponsors.',
     date:'20 January 2024',
@@ -44,7 +46,8 @@ export const expertise = [
   },
   {
     id: 3,
-    title: "Fetch.ai Hackathon",
+    title: "Fetch.ai Hackaton",
+    slug: "fetch-ai-hackathon",
     cover: "../images/e4.jpg",
     desc:'300+ participants. cash prizes worth 25k+. microagent and uagents application',
     date:'20 January 2024',
@@ -55,6 +58,7 @@ export const expertise = [
   {
     id: 4,
     title: "GDSC WOW",
+    slug: "gdsc-wow",
     cover: "../images/e2.jpg",
     desc:'Speakers from tech giants. 700+ developers best WoW of that year. Partnering wit GDSC',
     date:'20 January 2024',
