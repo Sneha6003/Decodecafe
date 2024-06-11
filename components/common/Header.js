@@ -30,7 +30,7 @@ const Header = () => {
             <Link href='/team' className={activeLink == "/team" ? "activeLink" : "none"}>
               Team
             </Link>
-            <Link href='/services' className={activeLink == "/services" ? "activeLink" : "none"}>
+            <Link href='/events' className={activeLink == "/events" ? "activeLink" : "none"}>
               Past Events
             </Link>
             
