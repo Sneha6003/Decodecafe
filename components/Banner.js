@@ -7,11 +7,11 @@ const Banner = () => {
       <section className='banner'>
         <div className='container'>
           <div>
-            <TitleLogo title='We are looking forward to another meetup!' /> <br />
-            <TitleLogo title='Book Your Seats Now!' />
+            <TitleLogo title='Join our Discord communtiy!' /> <br />
+            <TitleLogo title='and be updated about future events!' />
           </div>
           <div>
-            <button className='button-primary'>Register Here</button>
+            <button className='button-primary'>Join our Community</button>
           </div>
         </div>
       </section>
