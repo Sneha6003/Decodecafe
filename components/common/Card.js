@@ -13,14 +13,12 @@ export const Card = ({ data, caption, show, path }) => {
         <h1>{data.title}</h1>
         {caption && <div>{caption}</div>}
         <div className='flex'>
-          <span>{data.category}</span> {data.date && <span> / {data.date}</span>}
+          <span>{data.category ? data.category.map(cat => cat.text).join(', ') : ''}</span> {data.date && <span> / {data.date}</span>}
         </div>
 
         {show && (
           <ul>
-            {data.desc.map((text, i) => (
-              <li key={i}> - {text.text}</li>
-            ))}
+            <li>{data.desc}</li>
           </ul>
         )}
 
