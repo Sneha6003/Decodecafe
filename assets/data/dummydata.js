@@ -167,7 +167,7 @@ export const teamdata = [
   {
     id: 2,
     title: "Kshtij Varma",
-    cover: "../images/",
+    cover: "../images/Kshitij-Varma_Tech.jpg",
     post: "TECH TEAM",
     linkedin: "https://www.linkedin.com/in/kshitijvarma21/",
     github: "https://github.com/kstij", 
@@ -193,7 +193,7 @@ export const teamdata = [
   {
     id: 4,
     title: "Reedham Pujara",
-    cover: "../images/",
+    cover: "../images/img.jpeg",
     post: "TECH TEAM",
     linkedin: "https://www.linkedin.com/in/reedham-pujara/",
     github: "https://github.com/Reedham20", 
@@ -265,7 +265,7 @@ export const teamdata = [
   {
     id: 12,
     title: "Khushal Khandelwal",
-    cover: "../images/",
+    cover: "../images/KhushalKhandelwal_Teach.jpg",
     post: "TECH TEAM",
     linkedin: "https://www.linkedin.com/in/khushal-khandelwal/",
     github: "https://github.com/K-Khushal", 
@@ -319,7 +319,7 @@ export const teamdata = [
   {
     id: 18,
     title: "Nishtha Pitroda",
-    cover: "../images/",
+    cover: "../images/Nishtha_Pitroda_TECHTEAM.jpeg",
     post: "TECH TEAM",
     linkedin: "https://www.linkedin.com/in/nishthapitroda/",
     github: "https://github.com/pitrodanishtha09", 
