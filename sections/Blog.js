@@ -12,7 +12,7 @@ const Blog = () => {
           <div className='heading-title'>
             <TitleSm title='BLOG' /> <br />
             <br />
-            <Title title='Our views on marketing, design & technology' />
+            <Title title='Get updated with technology by reading Blogs' />
           </div>
           <BlogCard />
         </div>
