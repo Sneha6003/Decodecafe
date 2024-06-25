@@ -1,16 +1,40 @@
-import { home } from "@/assets/data/dummydata"
-import Banner from "@/components/Banner"
-import Expertise from "@/components/Expertise"
-
-import Testimonial from "@/components/Testimonial"
-import { Title, TitleLogo, TitleSm } from "@/components/common/Title"
-import { BlogCard, Brand } from "@/components/router"
-import React from "react"
+import React, { useState, useEffect } from 'react';
+import { home } from "@/assets/data/dummydata"; // Assuming this imports your dummy data
+import Banner from "@/components/Banner";
+import Expertise from "@/components/Expertise";
+import AboutSection from '../pages/AboutSection';
+import Testimonial from "@/components/Testimonial";
+import { Title, TitleLogo, TitleSm } from "@/components/common/Title";
+import { BlogCard, Brand } from "@/components/router";
+import backgroundImage1 from "../assets/images/background1.jpg";
+import backgroundImage2 from "../assets/images/background2.jpg";
+import backgroundImage3 from "../assets/images/background3.jpg";
+import backgroundImage4 from "../assets/images/background4.jpg";
+import backgroundImage5 from "../assets/images/background5.jpg";
 
 const Hero = () => {
+  const [currentBackground, setCurrentBackground] = useState(0);
+
+  // List of background images
+  const backgrounds = [
+    backgroundImage1,
+    backgroundImage2,
+    backgroundImage3,
+    backgroundImage4,
+    backgroundImage5
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentBackground((prevIndex) => (prevIndex + 1) % backgrounds.length);
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup interval on unmount
+  }, []);
+
   return (
     <>
-      <section className='hero'>
+      <section className='hero' style={{ backgroundImage: `url(${backgrounds[currentBackground]})` }}>
         <div className='container'>
           <TitleLogo title='CodeCafe' caption='De' className='logobg' />
           <h1 className='hero-title'>ENCOURAGING LEARNING IN PUBLIC</h1>
@@ -40,18 +64,19 @@ const Hero = () => {
           </div>
         </div>
       </section>
+      <AboutSection />
       <Expertise />
       <Banner />
       <Testimonial />
-      
+
       <Brand />
 
-      <div className='text-center'>
+      <div className='text-center' id='news'>
         <Title title='Latest news & articles' />
       </div>
       <BlogCard />
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
