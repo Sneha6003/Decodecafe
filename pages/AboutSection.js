@@ -9,16 +9,12 @@ const AboutSection = () => {
   const [draggedDistance, setDraggedDistance] = useState(0);
 
   const images = [
-    '/images/a.jpg',
-    '/images/b.jpg',
-    '/images/a.jpg',
-    '/images/b.jpg',
-    '/images/a.jpg',
-    '/images/b.jpg',
-    '/images/a.jpg',
-    '/images/b.jpg',
-    '/images/a.jpg',
-    '/images/b.jpg',
+    '/images/about_1.jpg',
+    '/images/about_2.jpg',
+    '/images/about_3.jpg',
+    '/images/about_4.jpg',
+    '/images/about_5.jpg',
+    '/images/about_6.jpg',
   ];
 
   const handleCloseGallery = () => {
