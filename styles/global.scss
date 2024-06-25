@@ -1,58 +1,106 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*  Hero Section */
 .hero {
   text-align: center;
-  padding: $xl-6 0;
-  padding-top: $xll-3;
-  height: 90vh !important;
-  overflow: hidden !important;
+  padding: 6rem 0;
+  padding-top: 8rem;
+  height: 90vh;
+  overflow: hidden;
   position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -40%;
-    width: 180%;
-    height: 200vh;
-    background-image: url("../assets/images/art-top-cropp.jpg");
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-    overflow-x: hidden !important;
-  }
-  .hero-title {
-    font-size: $xll-3;
-    line-height: 115px;
-    font-weight: 600;
-    margin: $xl-6 0;
-  }
-  .sub-heading {
-    display: flex;
-    justify-content: center;
-    .titleSm {
-      margin: 0 $xl-1;
-    }
-    span {
-      font-size: $xll;
-      line-height: 0;
-      color: $green;
-    }
-  }
 }
-.hero-sec {
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    top: -10%;
-    left: 0%;
-    width: 100%;
-    height: 200px;
-    z-index: -1;
-    background-color: $dark;
-    filter: blur(20px);
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40%;
+  width: 180%;
+  height: 200vh;
+  background-image: url("../assets/images/art-top-cropp.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  animation: slideshow 15s infinite ease-in;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: -1;
+}
+
+@keyframes slideshow {
+  0%, 20% {
+    background-image: url("../assets/images/background1.jpg");
+    background-position: bottom right;
+  }
+  20%, 40% {
+    background-image: url("../assets/images/background2.jpg");
+    background-position: bottom right;
+  }
+  40%, 60% {
+    background-image: url("../assets/images/background3.jpg");
+    background-position: bottom right;
+  }
+  60%, 80% {
+    background-image: url("../assets/images/background4.jpg");
+    background-position: bottom right;
+  }
+  80%, 100% {
+    background-image: url("../assets/images/background5.jpg");
+    background-position: bottom right;
   }
 }
 
+.hero-title {
+  font-size: 3.5rem;
+  line-height: 80px;
+  font-weight: 600;
+  margin: 6rem 0 6rem 0;
+  color:#b932eb;
+}
+
+.sub-heading {
+  display: flex;
+  justify-content: center;
+}
+
+.sub-heading .titleSm {
+  margin: 0 1rem;
+}
+
+.sub-heading span {
+  font-size: 3.7em;
+  line-height: 0;
+  color:$green;
+}
+
+.hero-sec {
+  position: relative;
+}
+
+.hero-sec::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: -1;
+  background-color: darkgray;
+  filter: blur(20px);
+}
 // expertise
 .expertise {
   .card-img {

@@ -1,7 +1,10 @@
-import Link from "next/link"
-import { TitleLogo } from "./Title"
-import { BsFacebook } from "react-icons/bs"
-import { AiFillBehanceCircle, AiFillInstagram, AiFillLinkedin } from "react-icons/ai"
+// Footer.js
+
+import Link from "next/link";
+import { TitleLogo } from "./Title";
+import { BsFacebook } from "react-icons/bs";
+import { AiFillBehanceCircle, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+
 
 const Footer = () => {
   return (
@@ -13,78 +16,54 @@ const Footer = () => {
               <TitleLogo title='CodeCafe' caption='De' className='logobg' />
               <br />
               <span>
-                Questions? Reach us <br /> Monday – Friday from 9 am to 6 pm
+                Questions? Reach us <br /> Anytime you feel comfortable ,<br/>but before 10 P.M.<br/>
               </span>
               <br />
               <br />
-              <h3>+1 001 234 5678</h3>
+              <Link href='mailto:decodecafe.community@gmail.com'><h3>=&gt;decodecafe.community@gmail.com</h3></Link>
               <br />
-              <button className='button-primary'>Request for quote</button>
+              {/* Replace the button with TooltipContainer */}
+              
             </div>
             <ul>
-              <h3>COMPANY</h3>
-              
+              <h3>Quick Links</h3>
               <li>
-                <Link href='/'>Our team</Link>
-              </li>
-              
-              <li>
-                <Link href='/'>Blog</Link>
-              </li>
-              
-              <li>
-                <Link href='/'>Contact</Link>
-              </li>
-            </ul>
-            <ul>
-              <h3>SERVICES</h3>
-              <li>
-                <Link href='/'>Web Design & Development</Link>
+                <Link href='/#'>Home</Link>
               </li>
               <li>
-                <Link href='/'>Branding & Creative Services</Link>
+                <Link href='/#about'>About</Link>
               </li>
               <li>
-                <Link href='/'>Digital Marketing</Link>
+                <Link href='/#journey'>Journey</Link>
               </li>
               <li>
-                <Link href='/'>E-Commerce</Link>
+                <Link href='/#news'>News & articles</Link>
               </li>
             </ul>
             <ul>
-              <h3>CONNECT</h3>
-              <div className='connect'>
-                <li>
-                  <Link href='/'>
-                    <BsFacebook size={25} />
-                  </Link>
-                </li>
-                <li>
-                  <Link href='/'>
-                    <AiFillBehanceCircle size={25} />
-                  </Link>
-                </li>
-                <li>
-                  <Link href='/'>
-                    <AiFillInstagram size={25} />
-                  </Link>
-                </li>
-                <li>
-                  <Link href='/'>
-                    <AiFillLinkedin size={25} />
-                  </Link>
-                </li>
-              </div>
+              <h3>Our SERVICES</h3>
+              <li>
+                <Link href='https://techaways.tech/'>techaways.tech</Link>
+              </li>
+            </ul>
+            <ul>
+              <h3>Our Policies</h3>
+              <li>
+                <Link href='https://github.com/DeCodeCafe/Code-of-Conduct'>Terms & Conditions</Link>
+              </li>
+              <li>
+                <Link href='https://github.com/DeCodeCafe/Code-of-Conduct'>Privacy Policies</Link>
+              </li>
             </ul>
           </div>
           <div className='legal connect py'>
             <div className='text'>
-              <span>© 2023 THE SEVEN. ALL RIGHTS RESERVED.</span>
+              <span>© 2024 DeCodeCafe Community. ALL RIGHTS RESERVED.</span>
             </div>
             <div className='connect'>
-              <span>GORKCODER COMPANY</span>
+              <span>DeCodeCafe Community</span>
               <span> &nbsp; | &nbsp; </span>
-              <span>TERMS & CONDITIONS</span>
+              <span>Lets Grow Toghether</span>
             </div>
           </div>
         </div>
@@ -93,4 +72,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;

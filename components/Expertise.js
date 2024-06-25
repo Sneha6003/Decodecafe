@@ -6,7 +6,7 @@ import { Card } from "./common/Card"
 const Expertise = () => {
   return (
     <>
-      <section className='expertise'>
+      <section className='expertise' id='journey'>
         <div className='container'>
           <div className='heading-title'>
             <Title title='Our Journey' />
