@@ -8,9 +8,19 @@ import React from "react"
 const SinglePost = () => {
   const router = useRouter()
   const { slug } = router.query
-  const post = expertise.find((post) => post.slug === parseInt(slug))
 
-  return (    
+  // Ensure slug is a string and find the post by slug
+  const post = slug ? expertise.find((post) => post.slug === slug) : null
+
+  if (!slug) {
+    return <div>Loading...</div>
+  }
+
+  if (!post) {
+    return <div>Post not found</div>
+  }
+
+  return (
     <>
       <Head>
         <title>{post.title}</title>
