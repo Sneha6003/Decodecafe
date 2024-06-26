@@ -8,7 +8,16 @@ import React from "react"
 const SinglePost = () => {
   const router = useRouter()
   const { id } = router.query
+
+  if (!id) {
+    return <div>Loading...</div>
+  }
+
   const post = blogdata.find((post) => post.id === parseInt(id))
+
+  if (!post) {
+    return <div>Post not found</div>
+  }
 
   return (
     <>
@@ -26,16 +35,12 @@ const SinglePost = () => {
             </div>
             <div className='desc'>
               <TitleSm title={post.desc1} />
-              
             </div>
           </div>
           <Banner />
-
           <div className='heading-title'>
             <div className='desc'>
               <TitleSm title={post.desc2} />
-
-             
             </div>
           </div>
         </div>
